@@ -16,15 +16,9 @@ public class Main {
         st1.alder = 22;
         st1.by = "Skuderløse";
 
-        Studerende st2 = new Studerende();
-        st2.navn ="Asta";
-        st2.alder = 22;
-        st2.by = "Haslev";
+        Studerende st2 = new Studerende("Asta", 22);
 
-        Studerende st3 = new Studerende();
-        st3.navn ="Delal";
-        st3.alder = 20;
-        st3.by = "Albertslund";
+        Studerende st3 = new Studerende("Delal", 20, "Albertslund");
 
         System.out.println("Choose a student:");
         System.out.println("Lasse");
