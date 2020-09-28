@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Developed by András Ács (acsandras@gmail.com)
  * Zealand / www.zealand.dk
@@ -24,12 +26,28 @@ public class Main {
         st3.alder = 20;
         st3.by = "Albertslund";
 
-        System.out.println("Alle studerende oprettet!");
+        System.out.println("Choose a student:");
+        System.out.println("Lasse");
+        System.out.println("Asta");
+        System.out.println("Delal");
 
-        // switch (studerende) {
-        //    "Lasse" sout studerende.alder
-        // }
+        Scanner input = new Scanner(System.in);
 
+        String nameToFind = input.nextLine();
+
+        switch(nameToFind) {
+            case "Lasse":
+                System.out.println(st1.alder + ", " + st1.by + ".");
+                break;
+            case "Asta":
+                System.out.println(st2.alder + ", " + st2.by + ".");
+                break;
+            case "Delal":
+                System.out.println(st3.alder + ", " + st3.by + ".");
+                break;
+            default:
+                System.out.println("ERROR");
+        }
     }
 
 }
